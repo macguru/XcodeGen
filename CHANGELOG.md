@@ -6,6 +6,7 @@
 - Allow synced folders to be sorted using `groupOrdering`. #1596 @macguru
 - Fixed synced folders ignoring `createIntermediateGroups=YES` and always beging created at the root level. #1596 @macguru
 - Fix membership exceptions not working for nested synced folders with intermediate groups enabled. #1596 @macguru
+- Fix missing productRefGroup in generated projects #1591 @ruslic19
 
 ## 2.44.1
 
