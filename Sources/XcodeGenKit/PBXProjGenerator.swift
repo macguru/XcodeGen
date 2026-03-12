@@ -129,21 +129,13 @@ public class PBXProjGenerator {
 
             targetObjects[target.name] = addObject(targetObject)
 
-            var explicitFileType: String?
-            var lastKnownFileType: String?
-            let fileType = Xcode.fileType(path: Path(target.filename), productType: target.type)
-            if target.platform == .macOS || target.platform == .watchOS || target.type == .framework || target.type == .extensionKitExtension {
-                explicitFileType = fileType
-            } else {
-                lastKnownFileType = fileType
-            }
+            let explicitFileType = Xcode.fileType(path: Path(target.filename), productType: target.type)
 
             if !target.isLegacy {
                 let fileReference = addObject(
                     PBXFileReference(
                         sourceTree: .buildProductsDir,
                         explicitFileType: explicitFileType,
-                        lastKnownFileType: lastKnownFileType,
                         path: target.filename,
                         includeInIndex: false
                     ),
