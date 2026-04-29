@@ -75,10 +75,10 @@
     {
       "identity" : "xcodeproj",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/tuist/XcodeProj.git",
+      "location" : "https://github.com/macguru/XcodeProj.git",
       "state" : {
-        "revision" : "01bb77000bc8c23a09ea2058f4954612f03cb705",
-        "version" : "9.10.1"
+        "branch" : "bugfix/xcode-26-3-format",
+        "revision" : "b81dee1f4bf73d91e2bed8cd2fb4cfdb4d0a42c2"
       }
     },
     {
